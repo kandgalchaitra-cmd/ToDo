@@ -9,23 +9,24 @@
   <body>
     <main class="app">
       <div class="app-header">
-        <h1>Todo App</h1>
-        <button id="theme-toggle" type="button" aria-label="Toggle theme">
-          Dark mode
-        </button>
+        <div>
+          <h1>Tasks</h1>
+          <p class="subtitle">Plan your day, one item at a time.</p>
+        </div>
+        <button id="theme-toggle" type="button" aria-label="Toggle theme">Dark mode</button>
       </div>
 
       <form id="todo-form" class="todo-form">
         <input
           id="todo-input"
           type="text"
-          placeholder="Add a todo"
+          placeholder="What needs to be done?"
           aria-label="Add a todo"
         />
-        <button type="submit">Add</button>
+        <button type="submit">Add task</button>
       </form>
 
-      <ul id="todo-list" class="todo-list"></ul>
+      <ul id="todo-list" class="todo-list" aria-live="polite"></ul>
     </main>
 
     <script src="script.js"></script>

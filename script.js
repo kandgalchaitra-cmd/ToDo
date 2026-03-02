@@ -51,7 +51,10 @@ todoForm.addEventListener('submit', (event) => {
   deleteBtn.type = 'button';
   deleteBtn.textContent = 'Delete';
   deleteBtn.addEventListener('click', () => {
-    li.remove();
+    li.classList.add('removing');
+    setTimeout(() => {
+      li.remove();
+    }, 220);
   });
 
   li.appendChild(span);
